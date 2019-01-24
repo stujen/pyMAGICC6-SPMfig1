@@ -1,0 +1,20 @@
+include README.rst
+include LICENSE
+include CHANGELOG.rst
+
+recursive-include pymagicc/MAGICC6 *.CFG
+recursive-include pymagicc/MAGICC6 *.exe
+recursive-include pymagicc/MAGICC6 *.IN
+recursive-include pymagicc/MAGICC6 *.MON
+recursive-include pymagicc/MAGICC6 *.prn
+recursive-include pymagicc/MAGICC6 *.SCEN
+recursive-include pymagicc/MAGICC6 *.txt
+
+include pymagicc/MAGICC6/out/.gitkeep
+
+recursive-include pymagicc/ *.csv
+recursive-include pymagicc/ *.json
+
+include versioneer.py
+include pymagicc/_version.py
+include pymagicc/default_config.nml

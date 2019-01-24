@@ -1,0 +1,30 @@
+{% extends "notebook.html" %}
+
+{% block header_buttons %}
+   <!-- insert appmode loading screen as early as possible -->
+  <style>
+    {% include 'appmode_top.css' %}
+  </style>
+  <div id="appmode-loader">
+    <img src="{{ base_url + "nbextensions/appmode/gears.svg" }}" title="App is loading...">
+  </div>
+
+  <span>
+     <button id="appmode-leave" class="btn btn-default btn-sm navbar-btn pull-right" title="Edit this app as notebook">Edit App</button>
+  </span>
+  <span>
+     <img id="appmode-busy" src="{{ base_url + "nbextensions/appmode/gears.svg" }}" title="Kernel Busy">
+  </span>
+
+
+  {{super()}}
+
+{% endblock header_buttons %}
+
+{% block script %}
+  {{super()}}
+  <!-- overwrite some styles -->
+  <style>
+    {% include 'appmode_bottom.css' %}
+  </style>
+{% endblock %}

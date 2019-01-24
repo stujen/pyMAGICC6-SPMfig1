@@ -1,0 +1,4 @@
+#!/Users/stuartjenkins/Documents/GitHub/pymagicc/venv/bin/python3
+
+from f90nml import cli
+cli.parse()

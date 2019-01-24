@@ -1,0 +1,36 @@
+#appmode-busy {
+    height: 30px;
+    visibility: hidden;
+}
+
+/* hide extraneous cell parts when in appmode  */
+.cell > .input,
+.celltoolbar,
+.container .cell .prompt,
+.container .cell .output_stderr {
+   display: none !important;
+}
+
+.cell,
+.cell.selected,
+.cell.selected:before {
+    background: transparent !important;
+    border: none            !important;
+    padding: 0              !important;
+}
+
+/* disable display of paragraph anchor text*/
+.container h1 .anchor-link,
+.container h2 .anchor-link,
+.container h3 .anchor-link,
+.container h4 .anchor-link,
+.container h5 .anchor-link,
+.container h6 .anchor-link{
+    display: none !important;
+}
+
+#save_widget,
+#kernel_logo_widget,
+#menubar-container {
+    display: none !important;
+}

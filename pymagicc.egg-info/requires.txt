@@ -1,0 +1,11 @@
+pandas
+pandas-datapackage-reader
+f90nml
+pyam-iamc
+PyYAML
+
+[test]
+pytest
+pytest-cov
+codecov
+goodtables
