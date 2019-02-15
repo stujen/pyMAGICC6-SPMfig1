@@ -1,2 +1,3 @@
+fair
 git+https://github.com/openclimatedata/pymagicc.git@master
 notebook
